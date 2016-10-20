@@ -28,8 +28,8 @@ class SentViewTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SentMemesTableViewCell")
         let memeImage = memes[indexPath.row]
         
-        cell?.textLabel?.text = memeImage.topText
         cell?.imageView?.image = memeImage.memedImage
+        cell?.textLabel?.text = memeImage.topText + " ... " + memeImage.bottomText
         
         return cell!
     }
