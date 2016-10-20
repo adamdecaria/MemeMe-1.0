@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="-404" y="-1081"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Sent View Table View Controller-->
         <scene sceneID="5wn-40-WNa">
             <objects>
-                <tableViewController id="DMX-hg-sas" sceneMemberID="viewController">
+                <tableViewController id="DMX-hg-sas" customClass="SentViewTableViewController" customModule="MemeMe_1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="AG8-3o-seB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

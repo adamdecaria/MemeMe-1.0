@@ -29,6 +29,7 @@ class SentViewTableViewController: UITableViewController {
         let memeImage = memes[indexPath.row]
         
         cell?.textLabel?.text = memeImage.topText
+        cell?.imageView?.image = memeImage.memedImage
         
         return cell!
     }
