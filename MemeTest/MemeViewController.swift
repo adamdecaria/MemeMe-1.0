@@ -75,6 +75,7 @@ class MemeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
             
         subscribeToKeyboardNotifications()
+        self.tabBarController?.tabBar.isHidden = true
             
     } // End viewWillAppear
         
@@ -82,6 +83,7 @@ class MemeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             
         super.viewWillDisappear(animated)
         unsubscribeFromKeyboardNotifications()
+        self.tabBarController?.tabBar.isHidden = false
             
     } // End viewWillDissapear
     
@@ -189,6 +191,13 @@ class MemeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     // save the memed image, its text and the original image in the Meme struct
     func saveMeme() {
         memeSaveInStruct = Meme(topText: textFieldTop.text!, bottomText: textFieldBottom.text!, originalImage: chosenImage.image!, memedImage: memedPic)
+        
+        // Add it to the memes array in the Application Delegate
+        let object = UIApplication.shared.delegate
+        let appDelegate = object as! AppDelegate
+        appDelegate.memes.append(memeSaveInStruct)
+        print(appDelegate.memes.count)
+        
     } // End saveMeme
     
     // MARK: create a "meme" by hidding the nav and bottom bar, then screenshotting
