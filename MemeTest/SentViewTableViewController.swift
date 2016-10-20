@@ -34,4 +34,13 @@ class SentViewTableViewController: UITableViewController {
         return cell!
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let object: AnyObject = self.storyboard!.instantiateViewController(withIdentifier: "MemeViewController")
+        let memeView = object as! MemeViewController
+        
+        memeView.chosenImage = UIImageView(image: self.memes[indexPath.row].memedImage)
+        
+        navigationController!.pushViewController(memeView, animated: true)
+    }
+    
 }

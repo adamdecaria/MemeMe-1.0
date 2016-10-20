@@ -64,7 +64,13 @@
                             <outlet property="delegate" destination="DMX-hg-sas" id="bVn-dg-ldT"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="9H8-yh-UEH"/>
+                    <navigationItem key="navigationItem" id="9H8-yh-UEH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ktH-uA-jc4">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="push" id="JVx-Vo-Dqc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UPp-9T-CC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,6 +147,7 @@
         <!--Navigation Controller-->
         <scene sceneID="fFJ-iO-AAe">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5T5-Vs-YS7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="TQg-7L-v4i" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="98A-v0-O3S"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sxe-FV-ZTI">
@@ -151,14 +158,13 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3kY-FC-SNs"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5T5-Vs-YS7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-404" y="278"/>
         </scene>
         <!--Meme View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MemeViewController" customModule="MemeMe_1_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemeViewController" id="BYZ-38-t0r" customClass="MemeViewController" customModule="MemeMe_1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -259,10 +265,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786" y="587"/>
+            <point key="canvasLocation" x="1607" y="40"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uCx-1e-Wah"/>
+        <segue reference="JVx-Vo-Dqc"/>
     </inferredMetricsTieBreakers>
 </document>
