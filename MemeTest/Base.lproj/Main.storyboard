@@ -89,36 +89,36 @@
             </objects>
             <point key="canvasLocation" x="420" y="-1091.6041979010495"/>
         </scene>
-        <!--Sent Memes Collection View Controller-->
+        <!--Sent Meme Collection View Controller-->
         <scene sceneID="S2Z-ba-RaW">
             <objects>
-                <collectionViewController id="UXa-wr-BpY" customClass="SentMemesCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="RAC-iH-To3">
+                <collectionViewController id="UXa-wr-BpY" customClass="SentMemeCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="RAC-iH-To3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tlR-oC-Gsy">
-                            <size key="itemSize" width="135" height="120"/>
+                            <size key="itemSize" width="168" height="148"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SentMemesCollectionViewCell" id="5I6-Lx-eCn" customClass="SentMemesCollectionViewCell" customModule="MemeMe_1_0" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="135" height="120"/>
+                                <rect key="frame" x="0.0" y="0.0" width="168" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="135" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="168" height="148"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zGa-ZR-d1b">
-                                            <frame key="frameInset" minX="-32" width="240" height="128"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DrS-yH-5hH">
+                                            <frame key="frameInset" minX="8" minY="8" width="152" height="132"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                     </subviews>
                                 </view>
                                 <connections>
-                                    <outlet property="savedMemeImageView" destination="zGa-ZR-d1b" id="16i-6H-bzS"/>
+                                    <outlet property="savedMemeImageView" destination="DrS-yH-5hH" id="RIc-ke-gjd"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -282,6 +282,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JVx-Vo-Dqc"/>
+        <segue reference="uCx-1e-Wah"/>
     </inferredMetricsTieBreakers>
 </document>
