@@ -54,7 +54,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="160"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="VWD-YQ-Wxd" id="Fpx-qT-xR6">
-                                    <frame key="frameInset" width="375" height="159"/>
+                                    <frame key="frameInset" width="375" height="160"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mz8-h1-x4s">
@@ -92,7 +92,7 @@
         <!--Sent Meme Collection View Controller-->
         <scene sceneID="S2Z-ba-RaW">
             <objects>
-                <collectionViewController id="UXa-wr-BpY" customClass="SentMemeCollectionViewController" sceneMemberID="viewController">
+                <collectionViewController id="UXa-wr-BpY" customClass="SentMemeCollectionViewController" customModule="MemeMe_1_0" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="RAC-iH-To3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
