@@ -80,7 +80,7 @@
                     <navigationItem key="navigationItem" title="Sent Memes" id="9H8-yh-UEH">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ktH-uA-jc4">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="DTP-s1-0qi"/>
+                                <segue destination="BYZ-38-t0r" kind="presentation" id="DTP-s1-0qi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -130,7 +130,7 @@
                     <navigationItem key="navigationItem" title="Sent Memes" id="yR5-A2-3li">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="kGU-fe-xKd">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="uCx-1e-Wah"/>
+                                <segue destination="BYZ-38-t0r" kind="presentation" id="uCx-1e-Wah"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -292,22 +292,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rdf-8T-1K6">
-                                <frame key="frameInset" minY="20" height="44"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rdf-8T-1K6">
                                 <items>
                                     <navigationItem id="t8n-yg-ACL" userLabel="Sent Memes"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FS9-CL-pcF">
-                                <frame key="frameInset" minX="16" minY="64" width="343" height="583"/>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FS9-CL-pcF"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="FS9-CL-pcF" firstAttribute="trailing" secondItem="pHU-6D-yMB" secondAttribute="trailingMargin" id="2Ez-hp-8AC"/>
-                            <constraint firstItem="Dup-S9-bOh" firstAttribute="top" secondItem="FS9-CL-pcF" secondAttribute="bottom" constant="20" id="E57-mG-H4J"/>
-                            <constraint firstItem="FS9-CL-pcF" firstAttribute="top" secondItem="Rdf-8T-1K6" secondAttribute="bottom" id="NHO-b1-zqe"/>
-                            <constraint firstItem="FS9-CL-pcF" firstAttribute="leading" secondItem="pHU-6D-yMB" secondAttribute="leadingMargin" id="Xkg-2O-5I2"/>
+                            <constraint firstItem="FS9-CL-pcF" firstAttribute="top" secondItem="xkD-Kt-aWU" secondAttribute="bottom" id="0Q2-vA-PAE"/>
+                            <constraint firstItem="FS9-CL-pcF" firstAttribute="leading" secondItem="Rdf-8T-1K6" secondAttribute="trailing" id="3iC-vL-fQS"/>
+                            <constraint firstAttribute="trailing" secondItem="FS9-CL-pcF" secondAttribute="trailing" id="A0c-XU-xia"/>
+                            <constraint firstItem="Dup-S9-bOh" firstAttribute="top" secondItem="FS9-CL-pcF" secondAttribute="bottom" id="MKG-Mr-P1V"/>
+                            <constraint firstItem="Rdf-8T-1K6" firstAttribute="top" secondItem="FS9-CL-pcF" secondAttribute="top" id="NJo-bz-HA0"/>
+                            <constraint firstItem="Rdf-8T-1K6" firstAttribute="leading" secondItem="pHU-6D-yMB" secondAttribute="leading" id="QXv-JS-O2C"/>
+                            <constraint firstItem="Rdf-8T-1K6" firstAttribute="leading" secondItem="FS9-CL-pcF" secondAttribute="leading" id="h9B-Go-dgZ"/>
                         </constraints>
                     </view>
                     <connections>

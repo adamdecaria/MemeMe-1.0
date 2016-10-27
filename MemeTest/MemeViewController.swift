@@ -239,14 +239,17 @@ class MemeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
    
     // MARK: Hide the image selected by the user so the screen is blank and reset the textField text
     @IBAction func cancelButton(_ sender: AnyObject) {
-      
+        
+        self.dismiss(animated: true, completion: nil)
+        
+        /*
         if chosenImage.isHidden == false {
             chosenImage.isHidden = true
         }
         
         textFieldTop.text = "TOP"
         textFieldBottom.text = "BOTTOM"
-
+         */
     }
     
     override var prefersStatusBarHidden: Bool {
